@@ -15,9 +15,7 @@ export default {
 </script>
 
 <template>
-  <main>
-    <app-footer></app-footer>
-  </main>
+  <app-footer></app-footer>
 </template>
 
 <style lang="scss">
