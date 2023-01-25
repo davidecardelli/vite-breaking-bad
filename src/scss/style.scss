@@ -1,0 +1,6 @@
+@use'./partials/variables.scss' as *;
+
+main {
+    height: 100vh;
+    background-color: $bg-primary;
+}
