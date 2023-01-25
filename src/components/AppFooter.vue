@@ -11,13 +11,13 @@ export default {
 </script>
 
 <template>
-  <footer class="d-flex justify-content-center flex-align-center">
+  <footer class="d-flex justify-content-center flex-align-center mt-2">
     <img class="img-fluid" src="../assets/pokemon-logo.png" alt="Logo Pokemon">
   </footer>
 </template>
 
 <style lang="scss" scoped>
 footer {
-  height: 150px;
+  height: 120px;
 }
 </style>
