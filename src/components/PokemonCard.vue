@@ -1,7 +1,7 @@
 <script>
 import { store } from '../store/store';
 export default {
-  name: 'AppFooter',
+  name: 'PokemonCard',
   data() {
     return { store }
   }
