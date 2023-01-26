@@ -1,6 +1,6 @@
 <script>
 import { store } from '../store/store';
-import SelectedBar from './SelectedBar.vue';
+import SelectBar from './SelectBar.vue';
 
 
 export default {
@@ -8,7 +8,7 @@ export default {
   data() {
     return { store }
   },
-  components: { SelectedBar },
+  components: { SelectBar },
 
 }
 </script>
@@ -16,7 +16,7 @@ export default {
 <template>
   <div class="container">
     <footer class="d-flex justify-content-around pt-3 pb-3">
-      <selected-bar></selected-bar>
+      <select-bar></select-bar>
       <img class="img-fluid" src="../assets/pokemon-logo.png" alt="Logo Pokemon">
     </footer>
   </div>

@@ -3,9 +3,7 @@ import { store } from '../store/store';
 export default {
   name: 'AppFooter',
   data() {
-    return {
-      store
-    }
+    return { store }
   }
 }
 </script>

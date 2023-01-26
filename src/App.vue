@@ -1,7 +1,7 @@
 <script>
 import axios from 'axios';
 import { store } from './store/store.js';
-import AppFooter from './components/AppFooter.vue'
+import AppHeader from './components/AppHeader.vue'
 import PokemonCard from './components/PokemonCard.vue';
 
 export default {
@@ -11,7 +11,7 @@ export default {
     return { store }
   },
 
-  components: { AppFooter, PokemonCard },
+  components: { AppHeader, PokemonCard },
 
   methods: {
     fetchPokemons() {
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <template>
-  <app-footer></app-footer>
+  <app-header></app-header>
   <pokemon-card></pokemon-card>
 </template>
 

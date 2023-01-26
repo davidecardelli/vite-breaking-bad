@@ -1,7 +1,7 @@
 <script>
 import { store } from '../store/store';
 export default {
-  name: 'SelectedBar',
+  name: 'SelectBar',
   data() {
     return { store }
   }
