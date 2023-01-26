@@ -14,15 +14,22 @@ export default {
   components: { AppFooter, PokemonCard },
 
   methods: {
-    fetchPokemonsStarted() {
+    fetchPokemons() {
       axios.get(`https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons?per=10`)
         .then((res) => {
           store.pokemons = res.data.docs
         })
+    },
+
+    fetchTypes() {
+      axios.get(`https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons/types1`)
+        .then((res) => {
+          store.types = res.data
+        })
     }
   },
 
-  created() { this.fetchPokemonsStarted() }
+  created() { this.fetchPokemons(), this.fetchTypes() }
 }
 </script>
 
