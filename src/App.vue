@@ -8,9 +8,7 @@ import PokemonCard from './components/PokemonCard.vue';
 export default {
   name: 'Breaking Bad',
   data() {
-    return {
-      store
-    }
+    return { store }
   },
   components: { AppFooter, PokemonCard }
 }
