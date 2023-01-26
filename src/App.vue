@@ -24,7 +24,7 @@ export default {
     fetchTypes() {
       axios.get(`https://41tyokboji.execute-api.eu-central-1.amazonaws.com/dev/api/v1/pokemons/types1`)
         .then((res) => {
-          store.types = res.data
+          store.pokemonTypes = res.data
         })
     }
   },
