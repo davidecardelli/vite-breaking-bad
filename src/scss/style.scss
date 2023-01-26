@@ -1,5 +1,13 @@
 @use'./partials/variables.scss' as *;
 
 body {
+    height: 100vh;
     background-color: $bg-primary;
+
+    main {
+        height: calc(100vh - 150px);
+        overflow-y: auto;
+        background-color: lightgray;
+        margin: 1rem;
+    }
 }
