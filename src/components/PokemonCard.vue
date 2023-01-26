@@ -11,33 +11,39 @@ export default {
 </script>
 
 <template>
-  <div class="col-2 card text-center">
-    <img class="img-fluid" src="https://images.secretlab.co/theme/common/collab_pokemon_catalog_charizard-min.png"
-      alt="nomedelpokemon">
-    <p class="number">numero</p>
-    <p class="name">nomepokemon</p>
-    <p class="type">tipopokemon</p>
+  <div class="row justify-content-center m-5">
+    <div v-for="pokemon in store.pokemons" :key="pokemon.number" class="col-2 pokemon-card text-center">
+      <img class="img-fluid" :src="pokemon.imageUrl" :alt="pokemon.name">
+      <p class="number">#{{ pokemon.number }}</p>
+      <p class="name">{{ pokemon.name }}</p>
+      <p class="type">{{ pokemon.type1 }}</p>
+    </div>
   </div>
+
 </template>
 
 <style lang="scss" scoped>
 @use'../scss/partials/variables.scss' as *;
 
 .row {
-  gap: 10px;
+  gap: 20px;
+  color: white;
 
-  .card {
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: black;
+
     img {
+      height: 150px;
+      width: 150px;
       border-radius: 50%;
-      background-color: white;
     }
-  }
-}
 
-.card {
-  img {
-    border-radius: 50%;
-    background-color: white;
   }
 }
 </style>
