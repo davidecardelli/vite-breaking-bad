@@ -2,6 +2,8 @@
 import axios from 'axios';
 import { store } from './store/store.js';
 import AppFooter from './components/AppFooter.vue'
+import PokemonCard from './components/PokemonCard.vue';
+
 
 export default {
   name: 'Breaking Bad',
@@ -10,12 +12,13 @@ export default {
       store
     }
   },
-  components: { AppFooter }
+  components: { AppFooter, PokemonCard }
 }
 </script>
 
 <template>
   <app-footer></app-footer>
+  <pokemon-card></pokemon-card>
 </template>
 
 <style lang="scss">
